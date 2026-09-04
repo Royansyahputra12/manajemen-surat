@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#89f5e7", "on-tertiary-fixed-variant": "#653e00", "surface-container-highest": "#e3e1e9", "inverse-primary": "#b6c4ff", "surface-container-low": "#f4f3fa", "on-secondary": "#ffffff", "primary-container": "#1e3a8a", "secondary": "#006a61", "tertiary-container": "#5c3800", "background": "#faf8ff", "primary-fixed-dim": "#b6c4ff", "inverse-on-surface": "#f1f0f7", "surface-variant": "#e3e1e9", "outline-variant": "#c5c5d3", "surface": "#faf8ff", "on-primary-container": "#90a8ff", "on-secondary-fixed": "#00201d", "surface-tint": "#4059aa", "on-surface-variant": "#444651", "on-tertiary-fixed": "#2a1700", "error": "#ba1a1a", "on-error-container": "#93000a", "surface-container-high": "#e9e7ef", "surface-container": "#eeedf4", "on-secondary-fixed-variant": "#005049", "tertiary": "#3e2400", "inverse-surface": "#2f3036", "secondary-fixed-dim": "#6bd8cb", "on-error": "#ffffff", "outline": "#757682", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "on-primary-fixed": "#00164e", "on-tertiary-container": "#ef9900", "tertiary-fixed": "#ffddb8", "surface-bright": "#faf8ff", "on-secondary-container": "#006f66", "on-primary-fixed-variant": "#264191", "primary-fixed": "#dce1ff", "secondary-container": "#86f2e4", "error-container": "#ffdad6", "tertiary-fixed-dim": "#ffb95f", "on-surface": "#1a1b21", "surface-container-lowest": "#ffffff", "primary": "#00236f", "on-background": "#1a1b21", "surface-dim": "#dad9e1" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "margin-desktop": "2rem", "space-md": "1rem", "space-sm": "0.5rem", "grid-columns": "12", "gutter": "1.5rem", "space-lg": "1.5rem", "space-2xl": "3rem", "space-xl": "2rem" }, "fontFamily": { "body-sm": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"], "code": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "code": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col pt-space-xl pb-space-xl"><div class="px-space-xl mb-space-xl flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[28px]">domain</span><span class="text-headline-sm text-primary font-bold tracking-tight">E-Office Enterprise</span></div><nav class="flex-1 px-space-md space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold"><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded-xl transition-all bg-primary-container text-on-primary-container font-bold" data-path="dasbor-eksekutif" href="#"><span class="material-symbols-outlined mr-space-md">dashboard</span>Dasbor Eksekutif</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="surat-masuk" href="#"><span class="material-symbols-outlined mr-space-md">inbox</span>Surat Masuk</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="surat-keluar" href="#"><span class="material-symbols-outlined mr-space-md">send</span>Surat Keluar</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="arsip-&-dms" href="#"><span class="material-symbols-outlined mr-space-md">folder</span>Arsip & DMS</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pengaturan-/-keamanan" href="#"><span class="material-symbols-outlined mr-space-md">settings</span>Pengaturan / Keamanan</a></nav></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[20px]">search</span><span class="text-body-md">Cari surat, disposisi, atau arsip...</span></div><div class="flex items-center gap-space-lg"><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-0 right-0 w-2 h-2 rounded-full bg-error"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-space-desktop py-space-desktop"><div class="flex flex-col w-full space-y-space-xl">
+<!-- Top Welcome & Quick Actions Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<span class="text-label-sm uppercase tracking-widest text-primary-container font-semibold">Dasbor Eksekutif • E-Office Enterprise</span>
+<h1 class="text-headline-lg text-on-surface font-bold tracking-tight">Ringkasan Operasional Surat</h1>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="bg-primary-container text-on-primary-container px-space-md py-space-sm rounded-xl flex items-center gap-space-xs font-label-md shadow-sm hover:opacity-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+        Unggah Surat Masuk
+      </button>
+<button class="bg-surface-container-high text-on-surface px-space-md py-space-sm rounded-xl flex items-center gap-space-xs font-label-md hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+        Buat Surat Keluar
+      </button>
+</div>
+</div>
+<!-- Key Metrics Summary Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-primary/5 rounded-full group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="text-on-surface-variant font-label-md">Total Surat Masuk</span>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined">inbox</span>
+</div>
+</div>
+<div>
+<div class="text-headline-lg font-bold text-on-surface">1,482</div>
+<div class="flex items-center gap-space-xs mt-space-xs text-secondary text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+12.4% bln lalu</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-secondary/10 rounded-full group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="text-on-surface-variant font-label-md">Surat Keluar</span>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined">send</span>
+</div>
+</div>
+<div>
+<div class="text-headline-lg font-bold text-on-surface">934</div>
+<div class="flex items-center gap-space-xs mt-space-xs text-secondary text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+8.1% bln lalu</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-tertiary-fixed/30 rounded-full group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="text-on-surface-variant font-label-md">Pending Disposisi</span>
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined">pending_actions</span>
+</div>
+</div>
+<div>
+<div class="text-headline-lg font-bold text-on-surface">43</div>
+<div class="flex items-center gap-space-xs mt-space-xs text-error text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_down</span>
+<span>-3.2% bln lalu</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-surface-container-high rounded-full group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="text-on-surface-variant font-label-md">Selesai Diproses</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined">task_alt</span>
+</div>
+</div>
+<div>
+<div class="text-headline-lg font-bold text-on-surface">1,373</div>
+<div class="flex items-center gap-space-xs mt-space-xs text-secondary text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+15.3% bln lalu</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Dynamic Charts Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-gutter">
+<!-- Chart 1: Statistik Arus Surat Bulanan -->
+<div class="lg:col-span-8 bg-surface-container-low rounded-xl p-space-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<h2 class="text-headline-sm text-on-surface font-bold">Statistik Arus Surat Bulanan</h2>
+<p class="text-body-sm text-on-surface-variant">Perbandingan volume surat masuk dan keluar tahun berjalan</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-space-xs text-body-sm text-on-surface-variant"><span class="w-3 h-3 rounded-full bg-primary-container"></span> Masuk</span>
+<span class="flex items-center gap-space-xs text-body-sm text-on-surface-variant"><span class="w-3 h-3 rounded-full bg-secondary"></span> Keluar</span>
+</div>
+</div>
+<!-- Simulated Bar Chart via SVG -->
+<div class="w-full h-64 flex items-end justify-between gap-space-sm pt-space-xl px-space-sm">
+<!-- Month bars -->
+<div class="flex-1 flex flex-col items-center gap-space-xs h-full justify-end group">
+<div class="w-full flex items-end justify-center gap-1 h-full">
+<div class="w-1/2 bg-primary-container rounded-t h-[65%] group-hover:opacity-90 transition-all"></div>
+<div class="w-1/2 bg-secondary rounded-t h-[45%] group-hover:opacity-90 transition-all"></div>
+</div>
+<span class="text-body-sm text-on-surface-variant">Jan</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-space-xs h-full justify-end group">
+<div class="w-full flex items-end justify-center gap-1 h-full">
+<div class="w-1/2 bg-primary-container rounded-t h-[80%] group-hover:opacity-90 transition-all"></div>
+<div class="w-1/2 bg-secondary rounded-t h-[55%] group-hover:opacity-90 transition-all"></div>
+</div>
+<span class="text-body-sm text-on-surface-variant">Feb</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-space-xs h-full justify-end group">
+<div class="w-full flex items-end justify-center gap-1 h-full">
+<div class="w-1/2 bg-primary-container rounded-t h-[50%] group-hover:opacity-90 transition-all"></div>
+<div class="w-1/2 bg-secondary rounded-t h-[35%] group-hover:opacity-90 transition-all"></div>
+</div>
+<span class="text-body-sm text-on-surface-variant">Mar</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-space-xs h-full justify-end group">
+<div class="w-full flex items-end justify-center gap-1 h-full">
+<div class="w-1/2 bg-primary-container rounded-t h-[90%] group-hover:opacity-90 transition-all"></div>
+<div class="w-1/2 bg-secondary rounded-t h-[70%] group-hover:opacity-90 transition-all"></div>
+</div>
+<span class="text-body-sm text-on-surface-variant">Apr</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-space-xs h-full justify-end group">
+<div class="w-full flex items-end justify-center gap-1 h-full">
+<div class="w-1/2 bg-primary-container rounded-t h-[75%] group-hover:opacity-90 transition-all"></div>
+<div class="w-1/2 bg-secondary rounded-t h-[60%] group-hover:opacity-90 transition-all"></div>
+</div>
+<span class="text-body-sm text-on-surface-variant">Mei</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-space-xs h-full justify-end group">
+<div class="w-full flex items-end justify-center gap-1 h-full">
+<div class="w-1/2 bg-primary-container rounded-t h-[95%] group-hover:opacity-90 transition-all"></div>
+<div class="w-1/2 bg-secondary rounded-t h-[85%] group-hover:opacity-90 transition-all"></div>
+</div>
+<span class="text-body-sm text-on-surface-variant">Jun</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-space-xs h-full justify-end group">
+<div class="w-full flex items-end justify-center gap-1 h-full">
+<div class="w-1/2 bg-primary-container rounded-t h-[85%] group-hover:opacity-90 transition-all"></div>
+<div class="w-1/2 bg-secondary rounded-t h-[70%] group-hover:opacity-90 transition-all"></div>
+</div>
+<span class="text-body-sm text-on-surface-variant">Jul</span>
+</div>
+</div>
+</div>
+<!-- Chart 2: Status Disposisi Berjenjang -->
+<div class="lg:col-span-4 bg-surface-container-low rounded-xl p-space-xl shadow-sm flex flex-col justify-between">
+<div>
+<h2 class="text-headline-sm text-on-surface font-bold">Status Disposisi Berjenjang</h2>
+<p class="text-body-sm text-on-surface-variant">Distribusi alur penanganan disposisi</p>
+</div>
+<div class="my-space-lg flex flex-col gap-space-md">
+<!-- Progress Item 1 -->
+<div>
+<div class="flex justify-between text-body-sm mb-space-xs">
+<span class="font-semibold text-on-surface">Direksi Utama</span>
+<span class="text-on-surface-variant">85% (120/141)</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 85%;"></div>
+</div>
+</div>
+<!-- Progress Item 2 -->
+<div>
+<div class="flex justify-between text-body-sm mb-space-xs">
+<span class="font-semibold text-on-surface">Kepala Divisi</span>
+<span class="text-on-surface-variant">64% (92/144)</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 64%;"></div>
+</div>
+</div>
+<!-- Progress Item 3 -->
+<div>
+<div class="flex justify-between text-body-sm mb-space-xs">
+<span class="font-semibold text-on-surface">Manajer Operasional</span>
+<span class="text-on-surface-variant">42% (48/114)</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full" style="width: 42%;"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between">
+<span class="text-body-sm text-on-surface-variant">Rata-rata Respon</span>
+<span class="text-headline-sm font-bold text-primary">3.4 Jam</span>
+</div>
+</div>
+</div>
+<!-- Recent Incoming Letters Table Section -->
+<div class="bg-surface-container-low rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-xl flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<h2 class="text-headline-sm text-on-surface font-bold">Surat Masuk Terbaru</h2>
+<p class="text-body-sm text-on-surface-variant">Daftar surat masuk yang memerlukan tindak lanjut segera</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-on-surface-variant">search</span>
+<input class="bg-surface pl-10 pr-space-md py-2 rounded-xl text-body-md text-on-surface outline-none border border-outline-variant/30 focus:border-secondary transition-all w-64" placeholder="Cari perihal / pengirim..." type="text"/>
+</div>
+<button class="bg-surface text-on-surface px-space-md py-2 rounded-xl border border-outline-variant/30 text-body-md font-label-md flex items-center gap-space-xs hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+          Filter
+        </button>
+</div>
+</div>
+<!-- Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container border-b border-outline-variant/10 text-on-surface-variant text-label-sm uppercase tracking-wider">
+<th class="py-space-md px-space-xl font-semibold">No. Agenda</th>
+<th class="py-space-md px-space-xl font-semibold">Tanggal</th>
+<th class="py-space-md px-space-xl font-semibold">Perihal</th>
+<th class="py-space-md px-space-xl font-semibold">Pengirim</th>
+<th class="py-space-md px-space-xl font-semibold">Sifat</th>
+<th class="py-space-md px-space-xl font-semibold">Status Disposisi</th>
+<th class="py-space-md px-space-xl font-semibold text-right">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10 text-body-md text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-xl font-code font-semibold text-primary">AGD/2023/1089</td>
+<td class="py-space-md px-space-xl text-on-surface-variant">24 Okt 2023</td>
+<td class="py-space-md px-space-xl font-medium max-w-xs truncate">Permohonan Audit Kepatuhan Sistem E-Office Triwulan IV</td>
+<td class="py-space-md px-space-xl text-on-surface-variant">Kementerian BUMN</td>
+<td class="py-space-md px-space-xl">
+<span class="px-space-sm py-0.5 rounded-full text-body-sm font-semibold bg-error-container text-on-error-container">Rahasia</span>
+</td>
+<td class="py-space-md px-space-xl">
+<span class="px-space-sm py-0.5 rounded-full text-body-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed">Pending Disposisi</span>
+</td>
+<td class="py-space-md px-space-xl text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Lihat">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="bg-primary-container text-on-primary-container px-space-sm py-1 rounded-lg text-body-sm font-label-md flex items-center gap-1 hover:opacity-90 transition-all">
+<span class="material-symbols-outlined text-[16px]">rule</span>
+                  Disposisi
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-xl font-code font-semibold text-primary">AGD/2023/1088</td>
+<td class="py-space-md px-space-xl text-on-surface-variant">24 Okt 2023</td>
+<td class="py-space-md px-space-xl font-medium max-w-xs truncate">Undangan Rapat Koordinasi Nasional Integrasi Data Dokumen</td>
+<td class="py-space-md px-space-xl text-on-surface-variant">Sekretariat Negara</td>
+<td class="py-space-md px-space-xl">
+<span class="px-space-sm py-0.5 rounded-full text-body-sm font-semibold bg-primary-fixed text-on-primary-fixed">Penting</span>
+</td>
+<td class="py-space-md px-space-xl">
+<span class="px-space-sm py-0.5 rounded-full text-body-sm font-semibold bg-secondary-fixed text-on-secondary-fixed">Sudah Didisposisi</span>
+</td>
+<td class="py-space-md px-space-xl text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Lihat">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="bg-surface-container-high text-on-surface px-space-sm py-1 rounded-lg text-body-sm font-label-md flex items-center gap-1 hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+                  Ubah
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-xl font-code font-semibold text-primary">AGD/2023/1087</td>
+<td class="py-space-md px-space-xl text-on-surface-variant">23 Okt 2023</td>
+<td class="py-space-md px-space-xl font-medium max-w-xs truncate">Laporan Bulanan Progres Infrastruktur Jaringan Cloud</td>
+<td class="py-space-md px-space-xl text-on-surface-variant">PT Telkom Indonesia</td>
+<td class="py-space-md px-space-xl">
+<span class="px-space-sm py-0.5 rounded-full text-body-sm font-semibold bg-surface-container-highest text-on-surface-variant">Biasa</span>
+</td>
+<td class="py-space-md px-space-xl">
+<span class="px-space-sm py-0.5 rounded-full text-body-sm font-semibold bg-surface-container-high text-on-surface">Selesai</span>
+</td>
+<td class="py-space-md px-space-xl text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Lihat">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="bg-surface-container-high text-on-surface px-space-sm py-1 rounded-lg text-body-sm font-label-md flex items-center gap-1 hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+                  Arsip
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-xl font-code font-semibold text-primary">AGD/2023/1086</td>
+<td class="py-space-md px-space-xl text-on-surface-variant">22 Okt 2023</td>
+<td class="py-space-md px-space-xl font-medium max-w-xs truncate">Pemberitahuan Jadwal Pemeliharaan Server Pusat Data Nasional</td>
+<td class="py-space-md px-space-xl text-on-surface-variant">Diskominfo Pusat</td>
+<td class="py-space-md px-space-xl">
+<span class="px-space-sm py-0.5 rounded-full text-body-sm font-semibold bg-primary-fixed text-on-primary-fixed">Penting</span>
+</td>
+<td class="py-space-md px-space-xl">
+<span class="px-space-sm py-0.5 rounded-full text-body-sm font-semibold bg-secondary-fixed text-on-secondary-fixed">Sudah Didisposisi</span>
+</td>
+<td class="py-space-md px-space-xl text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Lihat">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="bg-surface-container-high text-on-surface px-space-sm py-1 rounded-lg text-body-sm font-label-md flex items-center gap-1 hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+                  Ubah
+                </button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between border-t border-outline-variant/10 text-body-sm text-on-surface-variant">
+<span>Menampilkan 1-4 dari 1,482 surat masuk</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded border border-outline-variant/30 hover:bg-surface-container transition-all disabled:opacity-50" disabled="">Sebelumnya</button>
+<button class="px-space-sm py-1 rounded bg-primary-container text-on-primary-container font-semibold">1</button>
+<button class="px-space-sm py-1 rounded border border-outline-variant/30 hover:bg-surface-container transition-all">2</button>
+<button class="px-space-sm py-1 rounded border border-outline-variant/30 hover:bg-surface-container transition-all">3</button>
+<button class="px-space-sm py-1 rounded border border-outline-variant/30 hover:bg-surface-container transition-all">Selanjutnya</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

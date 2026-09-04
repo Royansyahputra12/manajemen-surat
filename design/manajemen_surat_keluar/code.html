@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#89f5e7", "on-tertiary-fixed-variant": "#653e00", "surface-container-highest": "#e3e1e9", "inverse-primary": "#b6c4ff", "surface-container-low": "#f4f3fa", "on-secondary": "#ffffff", "primary-container": "#1e3a8a", "secondary": "#006a61", "tertiary-container": "#5c3800", "background": "#faf8ff", "primary-fixed-dim": "#b6c4ff", "inverse-on-surface": "#f1f0f7", "surface-variant": "#e3e1e9", "outline-variant": "#c5c5d3", "surface": "#faf8ff", "on-primary-container": "#90a8ff", "on-secondary-fixed": "#00201d", "surface-tint": "#4059aa", "on-surface-variant": "#444651", "on-tertiary-fixed": "#2a1700", "error": "#ba1a1a", "on-error-container": "#93000a", "surface-container-high": "#e9e7ef", "surface-container": "#eeedf4", "on-secondary-fixed-variant": "#005049", "tertiary": "#3e2400", "inverse-surface": "#2f3036", "secondary-fixed-dim": "#6bd8cb", "on-error": "#ffffff", "outline": "#757682", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "on-primary-fixed": "#00164e", "on-tertiary-container": "#ef9900", "tertiary-fixed": "#ffddb8", "surface-bright": "#faf8ff", "on-secondary-container": "#006f66", "on-primary-fixed-variant": "#264191", "primary-fixed": "#dce1ff", "secondary-container": "#86f2e4", "error-container": "#ffdad6", "tertiary-fixed-dim": "#ffb95f", "on-surface": "#1a1b21", "surface-container-lowest": "#ffffff", "primary": "#00236f", "on-background": "#1a1b21", "surface-dim": "#dad9e1" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "margin-desktop": "2rem", "space-md": "1rem", "space-sm": "0.5rem", "grid-columns": "12", "gutter": "1.5rem", "space-lg": "1.5rem", "space-2xl": "3rem", "space-xl": "2rem" }, "fontFamily": { "body-sm": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"], "code": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "code": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col pt-space-xl pb-space-xl"><div class="px-space-xl mb-space-xl flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[28px]">domain</span><span class="text-headline-sm text-primary font-bold tracking-tight">E-Office Enterprise</span></div><nav class="flex-1 px-space-md space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dasbor-eksekutif" href="#"><span class="material-symbols-outlined mr-space-md">dashboard</span>Dasbor Eksekutif</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="surat-masuk" href="#"><span class="material-symbols-outlined mr-space-md">inbox</span>Surat Masuk</a><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded-xl transition-all bg-primary-container text-on-primary-container font-bold" data-path="surat-keluar" href="#"><span class="material-symbols-outlined mr-space-md">send</span>Surat Keluar</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="arsip-&-dms" href="#"><span class="material-symbols-outlined mr-space-md">folder</span>Arsip & DMS</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pengaturan-/-keamanan" href="#"><span class="material-symbols-outlined mr-space-md">settings</span>Pengaturan / Keamanan</a></nav></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[20px]">search</span><span class="text-body-md">Cari surat, disposisi, atau arsip...</span></div><div class="flex items-center gap-space-lg"><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-0 right-0 w-2 h-2 rounded-full bg-error"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-space-desktop py-space-desktop"><div class="flex flex-col w-full">
+<!-- Top Action & Metric Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-xl">
+<div>
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="text-code uppercase tracking-wider text-on-surface-variant font-bold">Modul Pengelolaan</span>
+<span class="text-on-surface-variant">/</span>
+<span class="text-code uppercase tracking-wider text-primary font-bold">Surat Keluar</span>
+</div>
+<h1 class="text-headline-lg font-bold text-on-surface tracking-tight">Manajemen & Arsip Surat Keluar</h1>
+<p class="text-body-md text-on-surface-variant mt-space-xs">Pusat kendali pembuatan draf, pelacakan paraf elektronik, verifikasi TTE, dan penomoran otomatis.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-sm px-space-lg py-space-md bg-primary-container text-on-primary-container font-bold rounded-xl shadow-md hover:bg-primary transition-all" onclick="openNewDraftModal()">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Buat Draf Surat Baru</span>
+</button>
+</div>
+</div>
+<!-- Metric Overview Cards (No borders, structured by surface shifts & soft shadows) -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-2xl">
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<span class="text-label-md text-on-surface-variant font-medium">Total Draf Aktif</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">edit_document</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="text-headline-lg font-bold text-on-surface">24</span>
+<span class="text-body-sm text-secondary font-medium">+4 minggu ini</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<span class="text-label-md text-on-surface-variant font-medium">Menunggu Paraf / TTE</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined">pending_actions</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="text-headline-lg font-bold text-on-surface">8</span>
+<span class="text-body-sm text-tertiary-container font-medium">Perlu tindakan segera</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<span class="text-label-md text-on-surface-variant font-medium">Disetujui & Terkirim</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">verified</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="text-headline-lg font-bold text-on-surface">142</span>
+<span class="text-body-sm text-secondary font-medium">Bulan ini</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<span class="text-label-md text-on-surface-variant font-medium">Arsip Koding Selesai</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined">folder_managed</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="text-headline-lg font-bold text-on-surface">99.8%</span>
+<span class="text-body-sm text-secondary font-medium">Valid</span>
+</div>
+</div>
+</div>
+<!-- Main Content Layout: Split Panel (List on left, Interactive Detail / Workflow Tracker on right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left Column: Letter Trays & List (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Filter & Search Bar -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant">filter_list</span>
+<input class="w-full bg-transparent text-body-md text-on-surface focus:outline-none" placeholder="Cari nomor, perihal, atau tujuan surat..." type="text"/>
+<button class="px-space-md py-space-xs bg-surface-container-high rounded-xl text-label-md text-on-surface font-medium">Filter</button>
+</div>
+<!-- Letter Items List Container -->
+<div class="bg-surface-container-low rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="px-space-lg py-space-md bg-surface-container flex items-center justify-between">
+<span class="text-label-md font-bold text-on-surface">Daftar Surat Keluar Aktif</span>
+<span class="text-body-sm text-on-surface-variant">Menampilkan 4 dari 24</span>
+</div>
+<div class="flex flex-col divide-y divide-surface-container-high">
+<!-- Item 1 (Active Selected) -->
+<div class="p-space-lg bg-surface-container-high/60 cursor-pointer transition-all hover:bg-surface-container-high flex flex-col gap-space-sm relative" onclick="selectLetter('1')">
+<div class="flex items-start justify-between">
+<span class="text-code text-primary font-bold px-space-xs py-0.5 bg-primary-fixed rounded">ND-412/DIR/V/2024</span>
+<span class="px-space-sm py-0.5 rounded-full text-body-sm font-medium bg-tertiary-fixed text-on-tertiary-fixed-variant">Paraf Direksi</span>
+</div>
+<h4 class="text-headline-sm text-on-surface line-clamp-1">Undangan Rapat Koordinasi Anggaran Q3 & Evaluasi Kinerja</h4>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant mt-1">
+<span>Tujuan: Kepala Divisi Regional & Cabang</span>
+<span>12 Mei 2024</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-lg cursor-pointer transition-all hover:bg-surface-container-high/50 flex flex-col gap-space-sm" onclick="selectLetter('2')">
+<div class="flex items-start justify-between">
+<span class="text-code text-on-surface-variant font-bold px-space-xs py-0.5 bg-surface-container rounded">SK-089/HR/V/2024</span>
+<span class="px-space-sm py-0.5 rounded-full text-body-sm font-medium bg-secondary-fixed text-on-secondary-fixed">TTE Terverifikasi</span>
+</div>
+<h4 class="text-headline-sm text-on-surface line-clamp-1">Keputusan Mutasi & Promosi Pegawai Tetap Periode Mei</h4>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant mt-1">
+<span>Tujuan: Seluruh Pegawai Kantor Pusat</span>
+<span>10 Mei 2024</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-space-lg cursor-pointer transition-all hover:bg-surface-container-high/50 flex flex-col gap-space-sm" onclick="selectLetter('3')">
+<div class="flex items-start justify-between">
+<span class="text-code text-on-surface-variant font-bold px-space-xs py-0.5 bg-surface-container rounded">SE-015/OPS/V/2024</span>
+<span class="px-space-sm py-0.5 rounded-full text-body-sm font-medium bg-surface-container-high text-on-surface-variant">Draf Awal</span>
+</div>
+<h4 class="text-headline-sm text-on-surface line-clamp-1">Standar Operasional Prosedur Pengamanan Dokumen Elektronik</h4>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant mt-1">
+<span>Tujuan: Tim IT & Kepatuhan</span>
+<span>08 Mei 2024</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="p-space-lg cursor-pointer transition-all hover:bg-surface-container-high/50 flex flex-col gap-space-sm" onclick="selectLetter('4')">
+<div class="flex items-start justify-between">
+<span class="text-code text-on-surface-variant font-bold px-space-xs py-0.5 bg-surface-container rounded">UM-210/SEC/V/2024</span>
+<span class="px-space-sm py-0.5 rounded-full text-body-sm font-medium bg-error-container text-on-error-container">Revisi Diperlukan</span>
+</div>
+<h4 class="text-headline-sm text-on-surface line-clamp-1">Pemberitahuan Pemeliharaan Infrastruktur Server Utama</h4>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant mt-1">
+<span>Tujuan: Mitra Vendor Eksternal</span>
+<span>05 Mei 2024</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Document Details, Workflow Tracker, TTE Preview, & Archival Coding (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Top Tab Navigation inside Detail Panel -->
+<div class="bg-surface-container-low p-space-sm rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary-container text-label-md font-bold transition-all">Pratinjau & Draf</button>
+<button class="px-space-md py-space-sm rounded-xl text-on-surface-variant text-label-md font-medium hover:bg-surface-container-high transition-all">Alur Paraf & TTE</button>
+<button class="px-space-md py-space-sm rounded-xl text-on-surface-variant text-label-md font-medium hover:bg-surface-container-high transition-all">Koding Arsip</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="p-space-sm text-on-surface-variant hover:text-on-surface rounded-xl hover:bg-surface-container-high"><span class="material-symbols-outlined">print</span></button>
+<button class="p-space-sm text-on-surface-variant hover:text-on-surface rounded-xl hover:bg-surface-container-high"><span class="material-symbols-outlined">download</span></button>
+<button class="p-space-sm text-on-surface-variant hover:text-on-surface rounded-xl hover:bg-surface-container-high"><span class="material-symbols-outlined">share</span></button>
+</div>
+</div>
+<!-- Document Editor / Preview Card -->
+<div class="bg-surface-container-low p-space-xl rounded-xl shadow-sm flex flex-col gap-space-lg relative overflow-hidden">
+<!-- Document Header Metadata -->
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-lg border-b border-surface-container-highest">
+<div>
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="text-code text-primary font-bold">Nomor Otomatis: ND-412/DIR/V/2024</span>
+<span class="px-space-sm py-0.5 bg-secondary-fixed text-on-secondary-fixed text-body-sm font-medium rounded">Sistem Kearsipan Standar</span>
+</div>
+<h2 class="text-headline-md font-bold text-on-surface">Undangan Rapat Koordinasi Anggaran Q3 & Evaluasi Kinerja</h2>
+</div>
+<div class="mt-space-md md:mt-0 flex items-center gap-space-sm">
+<span class="text-body-sm text-on-surface-variant">Template:</span>
+<span class="px-space-md py-space-xs bg-surface-container-high rounded-xl text-label-md font-bold text-on-surface">Nota Dinas Internal</span>
+</div>
+</div>
+<!-- Simulated Document Canvas -->
+<div class="bg-surface-container-lowest p-space-2xl rounded-xl shadow-inner font-body-md text-on-surface flex flex-col gap-space-lg max-h-[400px] overflow-y-auto">
+<div class="text-center font-bold text-headline-sm tracking-wide">
+            PT ENTERPRISE SYSTEM INDONESIA<br/>
+<span class="text-body-md font-normal text-on-surface-variant">Gedung Menara Korporat Lt. 18, Jl. Jend. Sudirman Kav. 50, Jakarta</span>
+</div>
+<hr class="border-surface-container-highest"/>
+<div class="grid grid-cols-2 gap-space-lg text-body-sm">
+<div><strong>Kepada:</strong> Kepala Divisi Regional & Seluruh Kepala Cabang</div>
+<div><strong>Tanggal:</strong> 12 Mei 2024</div>
+<div><strong>Dari:</strong> Direktur Operasional & Keuangan</div>
+<div><strong>Sifat:</strong> Penting / Rahasia</div>
+<div class="col-span-2"><strong>Perihal:</strong> Undangan Rapat Koordinasi Anggaran Q3 & Evaluasi Kinerja</div>
+</div>
+<div class="mt-space-md space-y-space-md text-body-md">
+<p>Sehubungan dengan berakhirnya paruh pertama tahun anggaran 2024, bersama ini kami mengundang Bapak/Ibu pimpinan unit kerja untuk hadir dalam Rapat Koordinasi Anggaran Q3 dan Evaluasi Kinerja yang akan diselenggarakan pada:</p>
+<ul class="list-disc pl-space-lg space-y-space-xs text-on-surface-variant">
+<li>Hari/Tanggal: Rabu, 15 Mei 2024</li>
+<li>Waktu: 09.00 WIB s.d. selesai</li>
+<li>Media: Hybrid (Ruang Rapat Utama Lt. 20 & Tautan Daring Terenkripsi)</li>
+</ul>
+<p>Mengingat pentingnya agenda tersebut, setiap kepala unit diwajibkan membawa draf usulan anggaran operasional semester kedua serta laporan capaian KPI masing-masing.</p>
+</div>
+<div class="flex justify-end mt-space-xl">
+<div class="flex flex-col items-center text-center">
+<span class="text-body-sm text-on-surface-variant mb-space-xs">Disetujui secara elektronik via TTE BSRE</span>
+<!-- QR Code & TTE Badge Preview Box -->
+<div class="p-space-sm bg-surface-container-low rounded-xl border border-surface-container-highest flex items-center gap-space-md">
+<div class="w-16 h-16 bg-surface-container-high rounded flex items-center justify-center text-primary font-bold text-code">
+<span class="material-symbols-outlined text-[32px]">qr_code_2</span>
+</div>
+<div class="text-left">
+<div class="text-code font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> TTE VALID
+                  </div>
+<div class="text-body-sm text-on-surface-variant">Ditandatangani oleh:<br/>Dr. H. M. Fauzi, M.Sc.<br/>NIP. 19780412 200501 1 003</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Approval Workflow Tracker (Paraf Stage Progression) -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="text-headline-sm font-bold text-on-surface flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">timeline</span> Pelacakan Alur Paraf & TTE
+            </h3>
+<span class="text-label-md text-primary font-medium">Tahap 3 dari 4 (Menunggu Tanda Tangan Akhir)</span>
+</div>
+<!-- Step Progress Visualizer -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md mt-space-xs">
+<!-- Step 1 -->
+<div class="flex flex-col gap-space-xs p-space-md bg-surface-container-low rounded-xl border-l-4 border-primary">
+<div class="flex items-center justify-between">
+<span class="text-code font-bold text-primary">TAHAP 1</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+</div>
+<span class="text-label-md font-bold text-on-surface">Penyusunan Draf</span>
+<span class="text-body-sm text-on-surface-variant">Oleh: Staff Administrasi Umum (Selesai 08 Mei)</span>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col gap-space-xs p-space-md bg-surface-container-low rounded-xl border-l-4 border-primary">
+<div class="flex items-center justify-between">
+<span class="text-code font-bold text-primary">TAHAP 2</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+</div>
+<span class="text-label-md font-bold text-on-surface">Koreksi & Paraf 1</span>
+<span class="text-body-sm text-on-surface-variant">Oleh: Kasubag Hukum & Organisasi (Selesai 10 Mei)</span>
+</div>
+<!-- Step 3 (Current Active) -->
+<div class="flex flex-col gap-space-xs p-space-md bg-surface-container-high rounded-xl border-l-4 border-tertiary-container shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-code font-bold text-tertiary-container">TAHAP 3</span>
+<span class="material-symbols-outlined text-tertiary-container text-[18px] animate-spin">progress_activity</span>
+</div>
+<span class="text-label-md font-bold text-on-surface">Paraf Direksi</span>
+<span class="text-body-sm text-on-surface-variant">Menunggu: Direktur Operasional</span>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col gap-space-xs p-space-md bg-surface-container-low rounded-xl opacity-60">
+<div class="flex items-center justify-between">
+<span class="text-code font-bold text-on-surface-variant">TAHAP 4</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">radio_button_unchecked</span>
+</div>
+<span class="text-label-md font-bold text-on-surface">TTE & Penomoran Final</span>
+<span class="text-body-sm text-on-surface-variant">Sistem Arsip Otomatis</span>
+</div>
+</div>
+</div>
+<!-- Archival Coding & Metadata Panel -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">folder_open</span>
+</div>
+<div>
+<h4 class="text-headline-sm font-bold text-on-surface">Koding Arsip Organisasi: UM.01.02/348/2024</h4>
+<p class="text-body-sm text-on-surface-variant">Klasifikasi: Umum & Tata Usaha / Rapat Pimpinan / Klasifikasi Keamanan Biasa</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<button class="w-full md:w-auto px-space-lg py-space-md bg-primary text-on-primary font-bold rounded-xl text-label-md hover:bg-primary-container transition-all flex items-center justify-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Berikan Paraf / TTE Sekarang</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- New Draft Modal (Hidden by default, toggled via JS) -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 flex items-center justify-center hidden" id="newDraftModal">
+<div class="bg-surface p-space-2xl rounded-xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-md border-b border-surface-container-highest">
+<h3 class="text-headline-md font-bold text-on-surface">Buat Draf Surat Keluar Baru</h3>
+<button class="p-space-xs text-on-surface-variant hover:text-on-surface rounded-lg" onclick="closeNewDraftModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Form Fields -->
+<div class="flex flex-col gap-space-md">
+<div>
+<label class="block text-label-md font-bold text-on-surface mb-space-xs">Pilih Template Standar Internal</label>
+<select class="w-full p-space-md bg-surface-container-low border border-surface-container-highest rounded-xl text-body-md text-on-surface focus:outline-none focus:border-primary">
+<option>Nota Dinas (ND) - Standar Koordinasi Internal</option>
+<option>Surat Edaran (SE) - Kebijakan Operasional</option>
+<option>Surat Keputusan (SK) - Mutasi & Promosi</option>
+<option>Surat Tugas (ST) - Penugasan Perjalanan Dinas</option>
+</select>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block text-label-md font-bold text-on-surface mb-space-xs">Klasifikasi Arsip Otomatis</label>
+<input class="w-full p-space-md bg-surface-container border border-surface-container-highest rounded-xl text-body-md text-on-surface-variant" readonly="" type="text" value="UM.01.02 - Ketatausahaan & Rapat"/>
+</div>
+<div>
+<label class="block text-label-md font-bold text-on-surface mb-space-xs">Nomor Surat Generator</label>
+<input class="w-full p-space-md bg-surface-container border border-surface-container-highest rounded-xl text-code font-bold text-primary" readonly="" type="text" value="ND-413/DIR/V/2024 (Auto-Generated)"/>
+</div>
+</div>
+<div>
+<label class="block text-label-md font-bold text-on-surface mb-space-xs">Tujuan / Penerima Surat</label>
+<input class="w-full p-space-md bg-surface-container-low border border-surface-container-highest rounded-xl text-body-md text-on-surface focus:outline-none focus:border-primary" placeholder="Contoh: Seluruh Kepala Divisi / Mitra Kerja" type="text"/>
+</div>
+<div>
+<label class="block text-label-md font-bold text-on-surface mb-space-xs">Perihal / Subjek Surat</label>
+<input class="w-full p-space-md bg-surface-container-low border border-surface-container-highest rounded-xl text-body-md text-on-surface focus:outline-none focus:border-primary" placeholder="Tuliskan perihal surat secara ringkas dan jelas..." type="text"/>
+</div>
+<div>
+<label class="block text-label-md font-bold text-on-surface mb-space-xs">Isi Ringkas / Draf Pesan</label>
+<textarea class="w-full p-space-md bg-surface-container-low border border-surface-container-highest rounded-xl text-body-md text-on-surface focus:outline-none focus:border-primary" placeholder="Ketik atau tempel isi surat di sini..." rows="4"></textarea>
+</div>
+</div>
+<!-- Modal Footer Action Buttons -->
+<div class="flex items-center justify-end gap-space-md pt-space-md border-t border-surface-container-highest">
+<button class="px-space-lg py-space-md bg-surface-container-high text-on-surface font-medium rounded-xl text-label-md hover:bg-surface-container-highest transition-all" onclick="closeNewDraftModal()">Batal</button>
+<button class="px-space-lg py-space-md bg-primary text-on-primary font-bold rounded-xl text-label-md hover:bg-primary-container transition-all flex items-center gap-space-sm" onclick="saveAndProceedDraft()">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Simpan & Ajukan Paraf</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Script -->
+<script>
+    function openNewDraftModal() {
+      const modal = document.getElementById('newDraftModal');
+      modal.classList.remove('hidden');
+    }
+
+    function closeNewDraftModal() {
+      const modal = document.getElementById('newDraftModal');
+      modal.classList.add('hidden');
+    }
+
+    function saveAndProceedDraft() {
+      alert('Draf surat baru berhasil disimpan dan dimasukkan ke dalam alur paraf elektronik (Tahap 1)!');
+      closeNewDraftModal();
+    }
+
+    function selectLetter(id) {
+      // Simulate switching active letter view
+      console.log('Selected letter ID:', id);
+    }
+  </script>
+</div></main></div></body></html>
